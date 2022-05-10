@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
-const SiteLoaderWrapper = styled.div`
-	.site-loader {
+export const SiteLoaderWrapper = styled.div`
+	&.site-loader {
 		background-color: #ffffff;
 		position: fixed;
 		width: 100%;
@@ -11,7 +11,7 @@ const SiteLoaderWrapper = styled.div`
 		z-index: 9999;
 		text-align: center;
 	}
-	.site-loader .preloader-content {
+	&.site-loader .preloader-content {
 		position: absolute;
 		top: 50%;
 		left: 50%;

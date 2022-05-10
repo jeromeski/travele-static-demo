@@ -9,7 +9,11 @@ export const normalize = {
 	h1: { fontSize: "2em", margin: "0.67em 0" },
 	hr: { boxSizing: "content-box", height: "0", overflow: "visible" },
 	pre: { fontFamily: "monospace, monospace", fontSize: "1em" },
-	a: { backgroundColor: "transparent" },
+	"a,\na:hover": {
+		backgroundColor: "transparent",
+		textDecoration: "none",
+		transition: "get(theme.custom.transition)"
+	},
 	"abbr[title]": {
 		borderBottom: "none",
 		textDecoration: ["underline", "underline dotted"]
