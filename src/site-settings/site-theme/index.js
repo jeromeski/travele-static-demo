@@ -8,6 +8,9 @@ const baseColors = {
 		secondary: {
 			regular: "#0791BE"
 		},
+		black: {
+			100: "#292929"
+		},
 		title: "#101F46",
 		light: "#ffffff",
 		dark: "#000000",
@@ -31,16 +34,32 @@ const defaultTheme = {
 		title: "Raleway, sans-serif"
 	},
 	fontSizes: {
-		xs: 12,
-		sm: 13,
-		base: 14,
-		md: 16,
-		lg: 18,
-		xl: 24,
-		"2xl": 30,
-		"3xl": 36,
-		"4xl": 42,
-		"5xl": 48
+		system: {
+			xs: 12,
+			sm: 13,
+			base: 14,
+			mdx: 15,
+			md: 16,
+			lg: 18,
+			xl: 24,
+			"2xl": 30,
+			"3xl": 36,
+			"4xl": 42,
+			"5xl": 48
+		},
+		wPx: {
+			xs: "12px",
+			sm: "13px",
+			base: "14px",
+			mdx: "15px",
+			md: "16px",
+			lg: "18px",
+			xl: "24px",
+			"2xl": "30px",
+			"3xl": "36px",
+			"4xl": "42px",
+			"5xl": "48px"
+		}
 	},
 	fontWeights: {
 		body: 400,
@@ -50,6 +69,7 @@ const defaultTheme = {
 		regular: 400,
 		normal: 400,
 		medium: 500,
+		mediumX: 600,
 		bold: 700,
 		bolder: 900
 	},

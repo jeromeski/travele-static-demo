@@ -1,6 +1,6 @@
 import logo from "../../assets/images/travele-logo.png";
 import { BottomHeader, SiteHeader, TopHeader } from "./header.style";
-import { Button, LinkButton } from "components/buttons/Button";
+import { Button } from "components/buttons/button.style";
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -246,9 +246,9 @@ export default function Header() {
 						</nav>
 					</div>
 					<div className="header-btn">
-						<Link to="/" className="button-primary">
+						<Button to="/" className="button-primary">
 							BOOK NOW
-						</Link>
+						</Button>
 					</div>
 				</div>
 			</BottomHeader>

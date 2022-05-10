@@ -16,10 +16,10 @@ const Home = lazy(() => import("./pages/Home"));
 function App() {
 	return (
 		<ThemeProvider theme={defaultTheme}>
-			<GlobalStyle />
 			<BrowserRouter>
 				<Header />
 				<Suspense fallback={<SiteLoader />}>
+					<GlobalStyle />
 					<Routes>
 						<Route exact path="/" element={<Home />} />
 					</Routes>
