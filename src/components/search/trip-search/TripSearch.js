@@ -1,5 +1,7 @@
 import React from "react";
+import DatePicker from "react-datepicker";
 import sliderPattern from "assets/images/slider-pattern.png";
+import "react-datepicker/dist/react-datepicker.css";
 
 function TripSearch() {
 	return (
@@ -17,26 +19,37 @@ function TripSearch() {
 					</div>
 					<div className="input-group width-col-3">
 						<label> Checkin Date* </label>
-						<i className="far fa-calendar" />
-						<input
-							className="input-date-picker"
-							type="text"
-							name="s"
-							placeholder="MM / DD / YY"
-							autoComplete="off"
-							readOnly="readonly"
+						<DatePicker
+							customInput={
+								<div>
+									<i className="far fa-calendar" style={{ top: 19 }} />
+									<input
+										className="input-date-picker"
+										type="text"
+										name="s"
+										placeholder="MM / DD / YY"
+										autoComplete="off"
+										readOnly="readonly"
+									/>
+								</div>
+							}
 						/>
 					</div>
 					<div className="input-group width-col-3">
-						<label> Checkout Date* </label>
-						<i className="far fa-calendar" />
-						<input
-							className="input-date-picker"
-							type="text"
-							name="s"
-							placeholder="MM / DD / YY"
-							autoComplete="off"
-							readOnly="readonly"
+						<DatePicker
+							customInput={
+								<div>
+									<i className="far fa-calendar" style={{ top: 19 }} />
+									<input
+										className="input-date-picker"
+										type="text"
+										name="s"
+										placeholder="MM / DD / YY"
+										autoComplete="off"
+										readOnly="readonly"
+									/>
+								</div>
+							}
 						/>
 					</div>
 					<div className="input-group width-col-3">
