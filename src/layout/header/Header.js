@@ -2,10 +2,11 @@ import logo from "../../assets/images/travele-logo.png";
 import { BottomHeader, SiteHeader, TopHeader } from "./header.style";
 import { Button } from "components/buttons/button.style";
 import { Link } from "react-router-dom";
+import MobileMenu from "./MobileMenu";
 
 export default function Header() {
 	return (
-		<SiteHeader>
+		<SiteHeader id="masthead" className="site-header header-primary">
 			{/* header html start */}
 			<TopHeader className="top-header">
 				<div className="container">
@@ -253,7 +254,7 @@ export default function Header() {
 				</div>
 			</BottomHeader>
 
-			<div className="mobile-menu-container" />
+			<MobileMenu />
 		</SiteHeader>
 	);
 }

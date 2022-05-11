@@ -2,15 +2,16 @@ import { createGlobalStyle } from "styled-components";
 import { get } from "styled-system";
 import { css } from "@styled-system/css";
 import { normalize } from "./normalize";
-import { defaults, otherDefaults } from "./defaults";
+import { otherDefaults } from "./defaults";
 
 export const GlobalStyle = createGlobalStyle(({ theme }) => {
 	return css({
 		...normalize,
 		body: {
 			fontSize: "14px",
-			color: "#737373",
-			backgroundColor: "#ffffff",
+			// "#737373",
+			color: get(theme, "colors.text.regular"),
+			backgroundColor: get(theme, "colors.bg"),
 			fontFamily: '"Poppins", sans-serif',
 			fontWeight: "normal",
 			fontStyle: "normal",

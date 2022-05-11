@@ -112,5 +112,86 @@ export const otherDefaults = {
 			right: "10px",
 			bottom: "10px"
 		}
-	}
+	},
+	".container": {
+		maxWidth: "1170px",
+		paddingLeft: "15px",
+		paddingRight: "15px"
+	},
+	".overlay": {
+		backgroundColor: "rgba(0, 0, 0, 0.5)",
+		position: "absolute",
+		top: "0",
+		left: "0",
+		width: "100%",
+		height: "100%",
+		zIndex: -1
+	},
+	".section-heading": { marginBottom: "50px" },
+	".section-heading h2": {
+		fontSize: "48px",
+		fontWeight: 900,
+		lineHeight: 1.1,
+		textTransform: "uppercase"
+	},
+	".section-heading h5": {
+		color: "#F56960",
+		fontSize: "15px",
+		fontWeight: 700,
+		lineHeight: 1.2,
+		marginBottom: "22px",
+		textTransform: "uppercase",
+		display: "inline-block"
+	},
+	".section-heading p:last-child": { marginBottom: "0" },
+	"@media screen and (max-width: 767px)": {
+		".section-heading h2": { fontSize: "30px" }
+	},
+	"@media screen and (max-width: 575px)": {
+		".section-heading": { marginBottom: "30px" },
+		".section-heading h2": { fontSize: "24px" }
+	},
+	".section-heading .dash-style": { paddingLeft: "80px", position: "relative" },
+	".section-heading .dash-style:before": {
+		backgroundColor: "#F56960",
+		content: '""',
+		height: "2px",
+		width: "70px",
+		marginRight: "10px",
+		position: "absolute",
+		left: "0",
+		top: "50%"
+	},
+	".title-icon-divider": {
+		color: "#0791BE",
+		lineHeight: 1,
+		position: "relative",
+		marginTop: "25px",
+		display: ["-webkit-box", "-moz-box", "-ms-flexbox", "-webkit-flex", "flex"]
+	},
+	".title-icon-divider:before, .title-icon-divider:after": {
+		content: '"...."',
+		display: "inline-block",
+		fontSize: "37px",
+		lineHeight: 0,
+		letterSpacing: "3px"
+	},
+	".title-icon-divider [class*=fa-]": {
+		fontSize: "20px",
+		marginLeft: "10px",
+		marginRight: "10px"
+	},
+	".title-icon-divider ~ p": { marginTop: "30px" },
+	".text-center .title-icon-divider": {
+		WebkitJustifyContent: "center",
+		MozJustifyContent: "center",
+		msJustifyContent: "center",
+		justifyContent: "center",
+		msFlexPack: "center"
+	},
+	".section-heading-white": { color: "#ffffff" },
+	".section-heading-white .dash-style": { color: "#ffffff" },
+	".section-heading-white .dash-style:before": { backgroundColor: "#ffffff" },
+	".section-heading-white h2,\n.section-heading-white p": { color: "#ffffff" },
+	".section-heading-white .title-icon-divider": { color: "#ffffff" }
 };

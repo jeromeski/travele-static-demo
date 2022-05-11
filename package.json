@@ -4,6 +4,7 @@
 	"private": true,
 	"dependencies": {
 		"@styled-system/theme-get": "^5.1.2",
+		"jquery": "^3.6.0",
 		"lighten-darken-color": "^1.0.0",
 		"react": "18.1.0",
 		"react-dom": "18.1.0",

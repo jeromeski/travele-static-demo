@@ -5,14 +5,15 @@ import { themeGet } from "@styled-system/theme-get";
 export const SiteHeader = styled.header`
 	&.site-header {
 		position: relative;
+		/* background-color: gray; */
 	}
-	/* .header-primary {
+	&.header-primary {
 		left: 0;
 		right: 0;
 		position: absolute;
 		width: 100%;
 		z-index: 99;
-	} */
+	}
 `;
 
 export const TopHeader = styled.div`
@@ -441,7 +442,7 @@ export const BottomHeader = styled.div`
 		}
 		.header-btn a {
 			padding: 8px 20px;
-			font-size: ${themeGet("fontSizes.wPx.md", "14px")};
+			font-size: ${themeGet("fontSizes.wPx.base", "14px")};
 		}
 	}
 `;
